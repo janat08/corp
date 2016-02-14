@@ -12,22 +12,22 @@ Router.route('/', {
 });
 
 Router.route('/corpforms/create', {
-  name: 'createCorpform',
-  controller: 'CorpformController',
+  name: 'CreateCorpform',
+  controller: 'CorpformsController',
   action: 'create',
   where: 'client'
 });
 
-Router.route('/corpform', {
-  name: 'corpformList',
+Router.route('/corpforms', {
+  name: 'ListCorpforms',
   controller: 'CorpformsController',
   action: 'list',
   where: 'client'
 });
 
 Router.route('/corpform/:_id', {
-  name: 'editCorpform',
-  controller: 'CorpformController',
+  name: 'EditCorpform',
+  controller: 'CorpformsController',
   action: 'edit',
   where: 'client'
 });

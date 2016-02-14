@@ -5,17 +5,19 @@ Corpforms = new Mongo.Collection('corpforms');
 
   Corpforms.attachSchema(new SimpleSchema({
 
+/// depending on what category is chosen some forms should hide/appear
+
 category: {
 type: String,
-label: "Area of operations: ",
+
 
 
   allowedValues: [ 'High Security 1.0-0.6 ',
    'Low Security 0.5-0.1 ',
    'Null Security 0.0-negative ',
    'Wormhole Space ',
-
-]}
+]
+}
 ,
 
 security: {
@@ -89,7 +91,7 @@ label: "Secondary TZ: ",
 ]}
 ,
 
-tertiaryTZ: {
+tertiarytz: {
 type: String,
 label: "Tertiary TZ: ",
 
@@ -102,7 +104,7 @@ label: "Tertiary TZ: ",
 ]}
 ,
 
-quaternary: {
+quaternarytz: {
 type: String,
 label: "Quaternary TZ: ",
 
@@ -223,7 +225,7 @@ incometax: {
 
 //checkboxes for capitals and supercapital attitude
 
-incomeGeneration: {
+incomegeneration: {
   type: String,
   label: "Degree of corporate programs or attitude towards carebearing: ",
 

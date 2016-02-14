@@ -1,11 +1,11 @@
 CorpformsController = RouteController.extend({
 
   subscriptions: function () {
-    this.subscribe('corpform');
+    this.subscribe('corpforms');
   },
 
   data: function () {
-    return Corpform.findOne({_id: this.params._id});
+    return Corpforms.findOne({_id: this.params._id});
   },
 
   edit: function() {
@@ -13,7 +13,7 @@ CorpformsController = RouteController.extend({
 },
 
   create: function() {
-    this.render('CreateCorpform', {});
+    this.render('afType_CreateCorpform', {});
   },
 
   list: function() {

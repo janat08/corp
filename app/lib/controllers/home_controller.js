@@ -47,7 +47,7 @@ HomeController = RouteController.extend({
   //  action: 'myActionFunction'
 
   action: function () {
-    this.render('create_corpform');
+    this.render('Home');
   },
   onAfterAction: function () {
   },

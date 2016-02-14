@@ -1,0 +1,48 @@
+<template name="EditCorpform">
+  <h1>Edit</h1>
+
+    {{#autoForm collection="Corpforms" id="editCorpformForm" type="Update"}}
+    <fieldset>
+      <h3> General </h3>
+      {{> afQuickField name="category" options="allowed"}}
+
+      {{> afQuickField name="security" options="allowed"}}
+
+      {{> afQuickField name="activityattitude" options="allowed"}}
+
+      {{> afQuickField name="pvpgearing" options="allowed"}}
+
+      {{> afQuickField name="primarytz" options="allowed"}}
+
+      {{> afQuickField name="secondarytz" options="allowed"}}
+
+      {{> afQuickField name="tertiazytz" options="allowed"}}
+
+      {{> afQuickField name="quaternarytz" options="allowed"}}
+
+      {{> afQuickField name="usrecruitment" options="allowed"}}
+
+      {{> afQuickField name="rurecruitment" options="allowed"}}
+
+      {{> afQuickField name="eurecruitment" options="allowed"}}
+
+      {{> afQuickField name="aurecruitment" options="allowed"}}
+
+      {{> afQuickField name="srpnonop" options="allowed"}}
+
+      {{> afQuickField name="srpop" options="allowed"}}
+
+      {{> afQuickField name="opsattitude" options="allowed"}}
+
+      {{> afQuickField name="incometax" options="allowed"}}
+
+      {{> afQuickField name="incomegeneration" options="allowed"}}
+
+    </fieldset>
+     {{/autoForm}}
+
+       <button type="update" class="btn btn-primary">Update</button>
+
+
+       {{> quickRemoveButton collection="Corpform" _id=this._id beforeRemove=beforeRemove class="btn btn-danger"}}
+</template>

@@ -23,3 +23,9 @@ Template.ListCorpform.onRendered(function () {
 
 Template.ListCorpform.onDestroyed(function () {
 });
+
+AutoForm.addHooks(null, {
+  onSuccess: function(operation, result, template) {
+    Router.go('carsList');
+  }
+});
